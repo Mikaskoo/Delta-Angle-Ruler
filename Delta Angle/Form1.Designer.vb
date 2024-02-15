@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Label1 = New Label()
         TextBox1 = New TextBox()
@@ -35,6 +36,7 @@ Partial Class Form1
         BtnCopy2 = New Button()
         LstBoxResults = New ListBox()
         BtnDelete = New Button()
+        ToolTip1 = New ToolTip(components)
         SuspendLayout()
         ' 
         ' Label1
@@ -158,6 +160,9 @@ Partial Class Form1
         BtnDelete.Text = "Delete"
         BtnDelete.UseVisualStyleBackColor = True
         ' 
+        ' ToolTip1
+        ' 
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(120F, 120F)
@@ -202,5 +207,6 @@ Partial Class Form1
     Friend WithEvents BtnCopy2 As Button
     Friend WithEvents LstBoxResults As ListBox
     Friend WithEvents BtnDelete As Button
+    Friend WithEvents ToolTip1 As ToolTip
 
 End Class
